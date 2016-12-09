@@ -1,0 +1,60 @@
+(DEFUN MEM (X LIST) 
+	( COND ( (NULL LISTS) NIL)
+		( T (COND
+				( (EQ X (CAR LIST)) T )
+			(T (MEM X (CDR Y)))))))
+(MEM X (1 2))
+
+
+
+(DEFUN TEST (( 1 2))
+	( COND ( (EQ CONST 0) NIL)
+		(T ( CONS CONST (CREATE(MINUS CONST 1)) ) ) ) )
+(DEFUN (1 2) (CONST)
+	( COND ( (EQ CONST 0) NIL)
+		(T ( CONS CONST (CREATE(MINUS CONST 1)) ) ) ) )
+
+(DEFUN FACT (T)
+	(COND ( (NULL ARRAY) 0 )
+	(T (PLUS (CAR ARRAY) (SUM (CDR ARRAY) ) ) ) ) )
+
+(DEFUN FACT (3232)
+	(COND ( (NULL ARRAY) 0 )
+	(T (PLUS (CAR ARRAY) (SUM (CDR ARRAY) ) ) ) ) )
+
+(DEFUN DEFUN (N)
+	( COND ( (EQ 0 N) 1 )
+		( T (COND ( (EQ 1 N) 1 )
+		( T
+			(TIMES (FACT(MINUS N 1)) N) ) ) ) ) )
+
+(DEFUN 32 (BASE EXP) 
+	( COND ( (EQ EXP 0) 1 )
+		 (T (TIMES BASE (POW BASE (MINUS EXP 1) ) ) ) ) ) 
+		
+
+(DEFUN MEM (X) 
+	( COND ( (NULL LIST) NIL)
+		( T (COND
+				( (EQ X (CAR LIST)) T )
+			(T (MEM X (CDR LIST)))))))
+			
+(DEFUN PLUS (S1 S2) 
+	(COND ( (NULL S1) S2) 
+		( (NULL S2) S1)
+		( T	( COND 
+		 ((MEM (CAR S1) S2)
+			(UNION (CDR S1) S2)) 
+		( T	(CONS 
+				(CAR S1) (UNION (CDR S1) S2) ))))
+			))
+
+
+
+
+
+
+
+
+
+				
